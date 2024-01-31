@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:youtube_turorial/controller/home_controller.dart';
 import 'package:youtube_turorial/pages/home_page.dart';
 
 void main() {
+  Get.put(HomeController());
   runApp(const MyApp());
 }
 
