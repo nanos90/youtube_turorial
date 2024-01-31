@@ -1,16 +1,19 @@
 # youtube_turorial
-
-A new Flutter project.
+youtube Link : https://www.youtube.com/watch?v=8vSF_ws3wtE
 
 ## Getting Started
+1. Make public repository
+2. first commit
 
-This project is a starting point for a Flutter application.
+## Project contents
+- Admin App
+- SMS OTP Verification
+- Payment Gateway
+- product filtering
+- product sorting
+- statemanagement
+- short cuts & tricks
+- production level build
+- And more...
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+01/31 - 28:26 GetX 영상 보고 다시 하기.

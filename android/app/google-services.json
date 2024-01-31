@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "688579661919",
+    "project_id": "tutorial-a0d1d",
+    "storage_bucket": "tutorial-a0d1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688579661919:android:9ede9dc46488cdd2f44bea",
+        "android_client_info": {
+          "package_name": "com.example.youtube_turorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2Pjn__eblFruftcVvApKEMLKe3SCc5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
