@@ -16,4 +16,12 @@ youtube Link : https://www.youtube.com/watch?v=8vSF_ws3wtE
 - production level build
 - And more...
 
+---
 01/31 - 28:26 GetX 영상 보고 다시 하기.
+
+- State Management for Beginners:  • Flutter Best State Management ?  [링크](https://www.youtube.com/watch?v=bzZF5ggktPA&t=0s)
+
+---
+
+
+
