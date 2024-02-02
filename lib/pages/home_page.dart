@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             title: const Text('Footware Admin'),
           ),
           body: ListView.builder(
-              itemCount: 0,
+              itemCount: 10,
               itemBuilder: (context, index) {
                 return ListTile(
                   title: const Text('title'),
@@ -26,7 +26,9 @@ class HomePage extends StatelessWidget {
               }),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
-              Get.to(const AddProductPage());
+              Get.to(() => const AddProductPage());
+              // Get.to(Page())보다 Get.to(() => Page())로 사용하는 것이
+              // 메모리 관리차원에서 더 낫다고 한다.
             },
             child: const Icon(Icons.add),
           ),
