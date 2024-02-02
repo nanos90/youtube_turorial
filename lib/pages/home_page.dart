@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             title: const Text('Footware Admin'),
           ),
           body: ListView.builder(
-              itemCount: 10,
+              itemCount: 0,
               itemBuilder: (context, index) {
                 return ListTile(
                   title: const Text('title'),
