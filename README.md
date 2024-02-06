@@ -32,3 +32,8 @@ firebase에서 DB 생성했고,(Test용으로 30일 이후에는 접속시 인�
 https://console.firebase.google.com/project/tutorial-a0d1d/firestore/data/~2F?hl=ko
 위 링크로 들어가서 Firebase DB 설명 듣고는 그다음 따라 하면 됨.
 
+---
+02/6 - 2:26:00
+Add Product 구현완료. Get Poduct 구현 시작하면 됨.
+
+

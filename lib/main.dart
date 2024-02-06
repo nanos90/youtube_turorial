@@ -1,9 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:youtube_turorial/controller/home_controller.dart';
+import 'package:youtube_turorial/firebase_option.dart';
 import 'package:youtube_turorial/pages/home_page.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: firebaseOption);
   Get.put(HomeController());
   runApp(const MyApp());
 }

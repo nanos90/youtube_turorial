@@ -28,8 +28,9 @@ class AddProductPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const TextField(
-                  decoration: InputDecoration(
+                TextField(
+                  controller: _.productNameController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -42,8 +43,9 @@ class AddProductPage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                const TextField(
-                  decoration: InputDecoration(
+                TextField(
+                  controller: _.productDescriptionController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -57,8 +59,9 @@ class AddProductPage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                const TextField(
-                  decoration: InputDecoration(
+                TextField(
+                  controller: _.productImageController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -71,8 +74,9 @@ class AddProductPage extends StatelessWidget {
                 const SizedBox(
                   height: 10,
                 ),
-                const TextField(
-                  decoration: InputDecoration(
+                TextField(
+                  controller: _.productPriceController,
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -87,15 +91,21 @@ class AddProductPage extends StatelessWidget {
                     Flexible(
                       child: DropDownBtn(
                         items: const ['Cat1', 'Cat2', 'Cat3'],
-                        selectedItemText: 'Categoory',
-                        onSelected: (selectedValue) {},
+                        selectedItemText: _.category,
+                        onSelected: (selectedValue) {
+                          _.category = selectedValue ?? 'general';
+                          _.update();
+                        },
                       ),
                     ),
                     Flexible(
                       child: DropDownBtn(
                         items: const ['brand1', 'brand2'],
-                        selectedItemText: 'Brand',
-                        onSelected: (selectedValue) {},
+                        selectedItemText: _.brand,
+                        onSelected: (selectedValue) {
+                          _.brand = selectedValue ?? 'no brand';
+                          _.update();
+                        },
                       ),
                     ),
                   ],
@@ -106,8 +116,11 @@ class AddProductPage extends StatelessWidget {
                 const Text('Offer Product ?'),
                 DropDownBtn(
                   items: const ['true', 'false'],
-                  selectedItemText: 'Offer ?',
-                  onSelected: (selectedValue) {},
+                  selectedItemText: _.offer.toString(),
+                  onSelected: (selectedValue) {
+                    _.offer = bool.tryParse(selectedValue ?? 'false') ?? false;
+                    _.update();
+                  },
                 ),
                 const SizedBox(
                   height: 10,
@@ -117,7 +130,9 @@ class AddProductPage extends StatelessWidget {
                     backgroundColor: Colors.indigoAccent,
                     foregroundColor: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    _.addProduct();
+                  },
                   child: const Text('Add Product'),
                 )
               ],
