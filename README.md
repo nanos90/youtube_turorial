@@ -33,7 +33,12 @@ https://console.firebase.google.com/project/tutorial-a0d1d/firestore/data/~2F?hl
 위 링크로 들어가서 Firebase DB 설명 듣고는 그다음 따라 하면 됨.
 
 ---
-02/6 - 2:26:00
+02/06 - 2:26:00
 Add Product 구현완료. Get Poduct 구현 시작하면 됨.
+
+---
+02/07 - 2:45:05
+DB fetch 하고, delete하고, 관리자 앱의 모든 기능 구현 완료.
+이제는 클라이언트 앱 개발 시작함.
 
 
