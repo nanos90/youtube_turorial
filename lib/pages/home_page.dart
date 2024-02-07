@@ -15,13 +15,16 @@ class HomePage extends StatelessWidget {
             title: const Text('Footware Admin'),
           ),
           body: ListView.builder(
-              itemCount: 10,
+              itemCount: _.products.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  title: const Text('title'),
-                  subtitle: const Text('price : 100'),
+                  title: Text(_.products[index].name ?? ''),
+                  subtitle: Text((_.products[index].price ?? 0).toString()),
                   trailing: IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.delete)),
+                      onPressed: () {
+                        _.deleteProduct(_.products[index].id!);
+                      },
+                      icon: const Icon(Icons.delete)),
                 );
               }),
           floatingActionButton: FloatingActionButton(
